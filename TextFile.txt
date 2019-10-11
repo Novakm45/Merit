@@ -1,0 +1,20 @@
+/*Max Guess Test*/
+
+var answer = Math.floor(Math.random()*100)+1; 
+var guess = false;
+while(guess != answer){
+	guess = prompt("pick a number (1-100");
+	guessValidator(guess) = true;
+	if(guess>answer)alert("too high");
+	else if(guess<answer)alert("too low");
+	else alert("you got it");
+	}
+	
+function guessValadator(guess){
+    if(guess>0 && guess<101);
+	return true;
+}
+else if{
+	alert("Invalid Input");
+	return false;
+}
