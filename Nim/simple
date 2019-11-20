@@ -8,15 +8,12 @@ while(again == true){
 	var next = games/2;
 	while(count < 21){
 		if(next = 0){
-			//cpuTurn
 			var turn = Math.random(Math.floor()*3)+1;
 			if(turn > 1 && count+turn<21){
 				count = Math.random(Math.floor);
 				count+=turn;
+        turns++;
 				return count;
-			}
-			else{
-				
 			}
 		}
 			//userTurn
@@ -24,6 +21,7 @@ while(again == true){
 			turn = prompt("how much do you want to go up by");
 			if(turn > 0 && turn < 4){
 				count+=turn;
+        turns++;
 				return count;
 			}
 			else alert("invalide input try again");
@@ -35,14 +33,16 @@ while(again == true){
 			if(count == 0){
 				alert("cpu wins"):
 		}
-			else alert("Player Wins");
-			games++
+  else{
+    alert("Player Wins");
+			games++;
+  }
 			again = prompt("play again? y for ok"){
 				if(again =="y"){
 					return again;
 				}
 				else return again = false;
-			}
 		}
-
+	}
+			
 			
