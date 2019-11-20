@@ -1,4 +1,4 @@
-/* Max nim */
+	/* Max nim */
 
 var games = 0;
 var again = true;
@@ -13,7 +13,7 @@ while(again == true){
 				count = Math.random(Math.floor);
 				count+=turn;
         turns++;
-				return count;
+				
 			}
 		}
 			//userTurn
@@ -33,12 +33,15 @@ while(again == true){
 			if(count == 0){
 				alert("cpu wins"):
 		}
-  else{
-    alert("Player Wins");
+			else{
+			alert("Player Wins");
 			games++;
   }
 			again = prompt("play again? y for ok"){
 				if(again =="y"){
+					again = prompt("are you sure y for yes"){
+						if(again =="y")
+							return true;
 					return again;
 				}
 				else return again = false;
