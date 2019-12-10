@@ -8,16 +8,16 @@ while(again == true){
 	var turn = 0;
 	var next = games%2;
 	while (count < 21){
-		if (next == 0){
-			var gameType = prompt("do you want simple"){
-				if(gameType == "simple"){
-			cpuTurn(count);
-		}
-		else{
-			userTurn(count);
-		}
-		alert("count is now "+count);
+		if(next == 0){
+			var gameType = prompt("do you want simple");
+			if(gameType == "simple"){
+				cpuTurn(count);
 			}
+			else{
+				userTurn(count);
+			}
+			alert("count is now "+count);
+		}
 		if (count < 21) next=nextSwitch(next);
 	}
 	again = declareWinner(next);
