@@ -6,23 +6,18 @@ var gameType = null;
 while(again == true){
 	var count = 0;
 	var turn = 0;
-	pickGame(gameType);
-	if(gameType == "simple"){
-		cpuTurn(count);
-	}
-else{
-		cpuTrainer(count);
-	}
 	var next = games%2;
 	while (count < 21){
 		if (next == 0){
-		count = cpuTurn(count);
-		alert("count is now "+count);
-	}
-		else{
-			count = userTurn(count);
-			alert("count is now "+count);
+			var gameType = prompt("do you want simple"){
+				if(gameType == "simple"){
+			cpuTurn(count);
 		}
+		else{
+			userTurn(count);
+		}
+		alert("count is now "+count);
+			}
 		if (count < 21) next=nextSwitch(next);
 	}
 	again = declareWinner(next);
@@ -32,11 +27,6 @@ alert("thanks for playing");
 
 
 /*Function*/
-
-function pickGame(gameType){
-	gameType = prompt("Enter simple or trainer");
-	return gameType;
-}
 
 function cpuTurn(count) {
 turn = 22;	
